@@ -1,5 +1,7 @@
+<pre>
 # JavaAlgoritham
 Java Learning so i am writing code for my practics.
+
 1)
 print
 A
@@ -22,4 +24,4 @@ $ $ $ $ $ $ $ $ $ $
 
 3)
 print
-
+</pre>
