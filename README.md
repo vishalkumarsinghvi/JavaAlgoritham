@@ -24,4 +24,8 @@ $ $ $ $ $ $ $ $ $ $
 
 3)
 print
+1:rameshsds
+1:rameshas
+1:ramesha
+1:rameshs
 </pre>
