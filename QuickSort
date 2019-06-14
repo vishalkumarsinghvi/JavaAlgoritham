@@ -1,0 +1,57 @@
+/* IMPORTANT: class must not be public. */
+
+/*
+ * uncomment this if you want to read input.
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+*/
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        int a[]={2,4,1,6,8,5,3,7};
+        System.out.println("Starting quick sort");
+        // new TestClass().mergeSort(a);
+        // new TestClass().displayArray(a);
+        
+        new TestClass().quickSort(a,0,a.length-1);
+        new TestClass().displayArray(a);    
+    }
+    
+    
+    public void quickSort(int a[],int start,int end){
+        if (start<end){ 
+        int pIndex=partition(a,start,end);
+        System.out.println("PINDEX"+pIndex);
+        quickSort(a,start,pIndex-1);
+        quickSort(a,pIndex+1,end);
+        }
+    }
+    
+    public int partition(int a[],int start,int end){
+        int pIndex=start;
+        for (int i=start;i<end;i++){
+            if(a[i]<=a[end]){
+                  int temp=a[i];
+                  a[i]=a[pIndex];
+                  a[pIndex]=temp;
+                  pIndex++;
+            }
+        } 
+         int temp=a[end];
+         a[end]=a[pIndex];
+         a[pIndex]=temp;
+         displayArray(a);
+        // System.out.println("Starting quick sort pIndex"+pIndex);
+         return pIndex;
+    }
+    
+  
+    public void displayArray(int x[]){
+        for(int i:x){
+        System.out.print(i+" ");
+        }
+        System.out.println(" ");
+    
+    }
+    
+}
