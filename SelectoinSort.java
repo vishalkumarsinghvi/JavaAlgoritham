@@ -1,6 +1,6 @@
 /******************************************************************************
 
-                            Online Java Compiler.
+                            Online ava Compiler.
                 Code, Compile, Run and Debug java program online.
 Write your code in this editor and press "Run" button to execute it.
 
@@ -15,12 +15,12 @@ public class SelectoinSort
 	}
 	
 	public static void SelectoinSort(int[] list){
-	   for(int j=0;j<list.length-1;j++)
-	    for(int i=j+1;i<list.length;i++){
-	        if(list[j]>list[i]){
-	            int temp=list[j];
-	            list[j]=list[i];
-	            list[i]=temp;
+	   for(int i=0;i<list.length-1;i++)
+	    for(int j=i+1;j<list.length;j++){
+	        if(list[i]>list[j]){
+	            int temp=list[i];
+	            list[i]=list[j];
+	            list[j]=temp;
 	        }
 	    }
 	}
